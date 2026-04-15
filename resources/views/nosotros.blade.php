@@ -1,21 +1,8 @@
-﻿<!DOCTYPE html>
-<html lang="es">
-<head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Vittorio | Quiénes Somos</title>
-</head>
-<body>
-<nav>
-  <div>Vittorio</div>
-  <div>
-    <a href="/">Home</a> |
-    <a href="/catalogo">Catálogo</a> |
-    <a href="/nosotros">Quiénes Somos</a> |
-    <a href="/comercializacion">Comercialización</a> |
-    <a href="/contacto">Contacto</a>
-  </div>
-</nav>
+﻿@extends('layout.layout')
+
+@section('title', 'Quiénes Somos - Vittorio')
+
+@section('content')
 <header>
   <p>Nuestra Esencia</p>
   <h1>EL ARTE DE LA PRECISIÓN INFINITA.</h1>
@@ -48,16 +35,4 @@
     <button>Agendar Cita</button>
   </div>
 </section>
-<footer>
-  <div>
-    <div>VITTORIO</div>
-    <p>© 2024 Vittorio. Precision Engineering.</p>
-  </div>
-  <div>
-    <a href="#">Términos y Usos</a>
-    <a href="#">Información de Contacto</a>
-    <a href="#"><span>share</span> REDES SOCIALES</a>
-  </div>
-</footer>
-</body>
-</html>
+@endsection

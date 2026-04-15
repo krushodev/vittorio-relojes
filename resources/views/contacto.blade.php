@@ -1,28 +1,8 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-<meta charset="utf-8">
-<meta content="width=device-width, initial-scale=1.0" name="viewport">
-</head>
-<body>
-<nav>
-<div>
-<div>Vittorio</div>
-<div>
-<a href="{{ url('/') }}">Inicio</a>
-<a href="{{ url('/catalogo') }}">Catálogo</a>
-<a href="{{ url('/nosotros') }}">Quiénes Somos</a>
-<a href="{{ url('/comercializacion') }}">Comercialización</a>
-<a href="{{ url('/contacto') }}">Contacto</a>
-</div>
-<div>
-<button>buscar</button>
-<button>carrito</button>
-<button>persona</button>
-</div>
-</div>
-</nav>
-<main>
+@extends('layout.layout')
+
+@section('title', 'Contacto - Vittorio')
+
+@section('content')
 <section>
 <div>
 <div>
@@ -109,22 +89,4 @@
 </div>
 </div>
 </section>
-</main>
-<footer>
-<div>
-<div>
-<span>Vittorio</span>
-<p>© 2024 Vittorio. Ingeniería de Precisión.</p>
-</div>
-<div>
-<a href="{{ url('/terminos-y-condiciones') }}">Términos y Usos</a>
-<a href="{{ url('/contacto') }}">Información de Contacto</a>
-<a href="#">
-<span>compartir</span>
-Compartir
-</a>
-</div>
-</div>
-</footer>
-</body>
-</html>
+@endsection

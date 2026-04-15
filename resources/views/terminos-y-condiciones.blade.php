@@ -1,28 +1,8 @@
-﻿<!DOCTYPE html>
-<html lang="es">
-<head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-</head>
-<body>
-<nav>
-<div>
-<div>Vittorio</div>
-<div>
-<a href="/">Home</a>
-<a href="/catalogo">Catálogo</a>
-<a href="/nosotros">Quiénes Somos</a>
-<a href="/comercializacion">Comercialización</a>
-<a href="/contacto">Contacto</a>
-</div>
-<div>
-<button><span data-icon="search">search</span></button>
-<button><span data-icon="shopping_cart">shopping_cart</span></button>
-<button><span data-icon="person">person</span></button>
-</div>
-</div>
-</nav>
-<main>
+﻿@extends('layout.layout')
+
+@section('title', 'Términos y Condiciones - Vittorio')
+
+@section('content')
 <header>
 <div>
 <div>
@@ -134,21 +114,4 @@
 </div>
 </div>
 </section>
-</main>
-<footer>
-<div>
-<div>
-<span>Vittorio</span>
-</div>
-<div>
-<a href="/terminos-y-condiciones">Términos y Usos</a>
-<a href="/contacto">Información de Contacto</a>
-<a href="#"><span data-icon="share">share</span><span>Compartir</span></a>
-</div>
-<div>
-© 2024 Vittorio. Precision Engineering.
-</div>
-</div>
-</footer>
-</body>
-</html>
+@endsection

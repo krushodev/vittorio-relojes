@@ -1,25 +1,8 @@
-﻿<!DOCTYPE html>
-<html lang="es">
-<head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-</head>
-<body>
-<nav>
-<div>
-<div>Vittorio</div>
-<div>
-<a href="/">Inicio</a>
-<a href="/catalogo">Catálogo</a>
-<a href="/nosotros">Quiénes Somos</a>
-<a href="/comercializacion">Comercialización</a>
-<a href="/contacto">Contacto</a>
-</div>
-<div>
-</div>
-</div>
-</nav>
-<main>
+﻿@extends('layout.layout')
+
+@section('title', 'Comercialización - Vittorio')
+
+@section('content')
 <section>
 <div>
 <div>
@@ -112,21 +95,4 @@
 <button>Descargar Protocolo</button>
 </div>
 </section>
-</main>
-<footer>
-<div>
-<div>
-<div>Vittorio</div>
-<p>© 2024 Vittorio. Ingeniería de Precisión.</p>
-</div>
-<div>
-<a href="/terminos-y-condiciones">Términos y Usos</a>
-<a href="/contacto">Información de Contacto</a>
-<div>
-<span>Compartir</span>
-</div>
-</div>
-</div>
-</footer>
-</body>
-</html>
+@endsection

@@ -1,0 +1,12 @@
+/* ========================================
+   NAVBAR - Barra de navegación
+   ======================================== */
+
+nav {
+    background: rgb(68, 208, 91);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}

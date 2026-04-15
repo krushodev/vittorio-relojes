@@ -1,11 +1,39 @@
-@import 'tailwindcss';
+/* ========================================
+   VITTORIO RELOJES - ESTILOS PRINCIPALES
+   ======================================== */
+
+@import "tailwindcss";
 
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
 @source '../../storage/framework/views/*.php';
 @source '../**/*.blade.php';
 @source '../**/*.js';
 
+/* ========================================
+   TEMA Y VARIABLES GLOBALES
+   ======================================== */
+
 @theme {
-    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-        'Segoe UI Symbol', 'Noto Color Emoji';
+    --font-sans:
+        "Space Grotesk", ui-sans-serif, system-ui, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+        "Noto Color Emoji";
 }
+
+/* ========================================
+   COMPONENTES
+   ======================================== */
+
+@import "./componentes/navbar.css";
+@import "./componentes/footer.css";
+
+/* ========================================
+   PÁGINAS
+   ======================================== */
+
+@import "./paginas/inicio.css";
+@import "./paginas/catalogo.css";
+@import "./paginas/nosotros.css";
+@import "./paginas/comercializacion.css";
+@import "./paginas/contacto.css";
+@import "./paginas/terminos-y-condiciones.css";
