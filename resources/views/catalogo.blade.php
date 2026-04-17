@@ -1,11 +1,8 @@
-@extends('layout.layout')
+@extends ('layout.layout')
 
-@section('title', 'Catalogo - Vittorio')
+@section ('title', 'Catalogo - Vittorio')
 
-
-@section('content')
-
-
-<section>testings</section>
+@section ('content')
+  <section>testings</section>
 
 @endsection

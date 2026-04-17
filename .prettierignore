@@ -1,0 +1,50 @@
+# Dependencies
+node_modules/
+vendor/
+
+# Build outputs
+public/build/
+public/hot/
+public/storage/
+
+# Cache and storage
+storage/
+bootstrap/cache/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Laravel specific
+artisan
+
+# Config files that should maintain their format
+composer.lock
+package-lock.json
+yarn.lock
+
+# Database files
+*.sqlite
+*.sqlite3
+*.db
+
+# Test coverage
+coverage/
+
+# Minified files
+*.min.js
+*.min.css
