@@ -1,3 +1,231 @@
 /* ========================================
    PÁGINA: COMERCIALIZACIÓN
    ======================================== */
+
+.comercializacion-page {
+    padding: 5rem 1.5rem 6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4.5rem;
+    color: var(--color-text-on-surface);
+}
+
+@media (min-width: 768px) {
+    .comercializacion-page {
+        padding: 6rem 3rem 8rem;
+    }
+}
+
+.comercializacion-hero,
+.comercializacion-features,
+.comercializacion-finance,
+.comercializacion-cta {
+    max-width: 84rem;
+    margin: 0 auto;
+}
+
+.comercializacion-hero {
+    display: grid;
+    gap: 2.5rem;
+    align-items: center;
+    grid-template-columns: 1fr;
+}
+
+@media (min-width: 992px) {
+    .comercializacion-hero {
+        grid-template-columns: 1.05fr 0.95fr;
+    }
+}
+
+.hero-copy h1 {
+    font-size: clamp(3rem, 5vw, 4.5rem);
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    line-height: 1.02;
+    margin-bottom: 1.25rem;
+    color: var(--color-text-on-surface);
+}
+
+.hero-copy p {
+    max-width: 46rem;
+    color: var(--color-text-variant);
+    font-weight: 300;
+    line-height: 1.8;
+    font-size: 1.05rem;
+}
+
+.hero-media {
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image {
+    width: 100%;
+    max-width: 400px;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    border-radius: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: #111;
+    box-shadow: 0 28px 75px rgba(0, 0, 0, 0.24);
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.comercializacion-features .section-heading h2,
+.comercializacion-finance .finance-intro h2,
+.comercializacion-cta .cta-copy h2 {
+    font-size: 1.1rem;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    color: rgba(220, 220, 220, 0.6);
+    margin-bottom: 1rem;
+}
+
+.feature-grid,
+.finance-grid {
+    display: grid;
+    gap: 1.75rem;
+}
+
+.feature-grid {
+    grid-template-columns: 1fr;
+}
+
+@media (min-width: 880px) {
+    .feature-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+.feature-card,
+.finance-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 1.75rem;
+    padding: 2rem;
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.12);
+}
+
+.feature-card.highlight,
+.feature-card.feature-card-highlight {
+    border-color: rgba(255, 255, 255, 0.18);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.feature-card span,
+.finance-card span {
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    color: rgba(220, 220, 220, 0.75);
+    font-size: 0.77rem;
+    margin-bottom: 1rem;
+}
+
+.feature-card h3,
+.finance-card h4 {
+    font-size: 1.35rem;
+    margin-bottom: 0.85rem;
+    color: var(--color-text-on-surface);
+}
+
+.feature-card p,
+.finance-card p,
+.comercializacion-hero p,
+.comercializacion-cta p {
+    color: var(--color-text-variant);
+    line-height: 1.85;
+    font-size: 1rem;
+}
+
+.feature-card ul {
+    margin-top: 1rem;
+    padding-left: 1.2rem;
+    color: var(--color-text-variant);
+}
+
+.feature-card ul li {
+    margin-bottom: 0.7rem;
+}
+
+.feature-card button,
+.cta-button {
+    margin-top: 1.5rem;
+    padding: 1rem 1.75rem;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: transparent;
+    color: var(--color-text-on-surface);
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    transition: transform 0.25s ease, background 0.25s ease, border-color 0.25s ease;
+}
+
+.feature-card button:hover,
+.cta-button:hover {
+    transform: translateY(-2px);
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.22);
+}
+
+.comercializacion-finance .finance-intro h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    color: var(--color-text-on-surface);
+    letter-spacing: -0.03em;
+}
+
+.finance-grid {
+    grid-template-columns: 1fr;
+}
+
+@media (min-width: 860px) {
+    .finance-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+.comercializacion-cta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    padding: 2.5rem 2rem;
+    border-radius: 2rem;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 24px 70px rgba(0, 0, 0, 0.12);
+}
+
+.comercializacion-cta .cta-copy {
+    max-width: 58rem;
+}
+
+.comercializacion-cta .cta-copy h2 {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    color: var(--color-text-on-surface);
+}
+
+.cta-button {
+    min-width: 220px;
+}
+
+.comercializacion-page img {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 1.75rem;
+}
