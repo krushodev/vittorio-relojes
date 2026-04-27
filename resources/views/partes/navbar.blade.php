@@ -18,9 +18,9 @@
       <button class="navbar-icon-btn" aria-label="Buscar">
         <i data-lucide="search"></i>
       </button>
-      <a href="{{ url('/carrito') }}" class="navbar-icon-btn" aria-label="Carrito">
+      <button class="navbar-icon-btn" aria-label="Carrito">
         <i data-lucide="shopping-cart"></i>
-      </a>
+      </button>
       <a href="{{ url('/login') }}" class="navbar-icon-btn" aria-label="Cuenta">
         <i data-lucide="user"></i>
       </a>
