@@ -34,6 +34,7 @@
               </div>
               <div class="product-card-info">
                 <h3 class="product-card-name">{{ $modelo['nombre'] }}</h3>
+                <p class="product-card-price">{{ number_format($modelo['precio'], 0, ',', '.') }} USD</p>
               </div>
             </article>
           @endforeach

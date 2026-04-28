@@ -59,29 +59,6 @@
         </div>
       </div>
 
-      <div class="bento-grid bento-row-2">
-        <div class="feature-card">
-          <div class="feature-icon">
-            <i data-lucide="cog"></i>
-          </div>
-          <h4 class="feature-title">Calibración</h4>
-          <p class="feature-description">Cada componente es testeado bajo condiciones extremas durante 400 horas.</p>
-        </div>
-
-        <div class="movement-card">
-          <img
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7RxfO075rdaDIMYwWp4dx6ieJHDn7loU5CBR-hpo4zKalxRXvtaQcYKqWsYq_-Fr2oxdPux4fvYObVzpjsUzPjhdpRn6lqphOWadrZ0FpvMIZm7Xcl0SujBKK49IryqhV6XgXsPlVpJMxJzMYQLQE4qy8vssVouwbYwGKAIbCDYt1dd-ay0L-XOa-2R8TDOqGuKzv6Spk6PsWqnJtsczUdg6tRcXfMdgSSfKeMowyAUQHlzyszFueKfUuxhouclSb6nBN6Jx9glgl"
-            alt="Watch Movement"
-            class="movement-card-image"
-          />
-          <div class="movement-card-content">
-            <div class="movement-card-inner">
-              <h3 class="movement-card-title">V-MECHANIC</h3>
-              <p class="movement-card-subtitle">El Corazón del Tiempo</p>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   </section>
   <section class="tech-specs-section">
@@ -114,7 +91,7 @@
     </div>
     <div class="cta-banner-content">
       <h2 class="cta-banner-title">Sé dueño de tu legado.</h2>
-      <button class="btn-outline-vittorio">Reservar Cita Privada</button>
+      <a href="{{ route('contacto') }}" class="btn-outline-vittorio">Reservar Cita Privada</a>
     </div>
   </section>
 
