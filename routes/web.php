@@ -1,13 +1,3 @@
-{{-- 
-  ============================================================
-  ARCHIVO: web.php
-  PROPÓSITO: Definición de rutas web del proyecto
-  DESCRIPCIÓN: Este archivo contiene todas las rutas HTTP
-  de la aplicación. Cada ruta define una URL y la vista
-  que se debe renderizar. Los datos del catálogo están
-  hardcodeados aquí.
-  ============================================================
---}}
 
 <?php
 
