@@ -1,7 +1,7 @@
 <footer class="footer-vittorio">
   <div class="footer-container">
     <div class="footer-brand-section">
-      <div class="footer-brand-title">Vittorio</div>
+      <img src="{{ asset('assets/logo.png') }}" alt="Vittorio" class="footer-logo" />
       <p class="footer-brand-description">Manufactura La Plata · Argentina</p>
     </div>
 

@@ -35,11 +35,27 @@
     gap: 0.5rem;
 }
 
-.footer-brand-title {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--color-text-primary);
-    letter-spacing: -0.02em;
+.footer-logo {
+    height: 42px;
+    width: auto;
+    max-width: 160px;
+    object-fit: contain;
+    display: block;
+    margin-bottom: 0.75rem;
+}
+
+@media (min-width: 768px) {
+    .footer-logo {
+        height: 52px;
+        max-width: 200px;
+    }
+}
+
+@media (min-width: 992px) {
+    .footer-logo {
+        height: 58px;
+        max-width: 240px;
+    }
 }
 
 .footer-brand-description {
@@ -47,6 +63,7 @@
     font-size: 0.75rem;
     letter-spacing: 0.2em;
     text-transform: uppercase;
+    margin: 0;
 }
 
 .footer-actions {
